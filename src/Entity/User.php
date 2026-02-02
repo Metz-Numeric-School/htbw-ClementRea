@@ -3,16 +3,25 @@ namespace App\Entity;
 
 use App\Entity\AbstractEntity;
 
+/**Classe user qui représente un utilisteur de l'appli
+*/
 class User extends AbstractEntity 
 {
+    /** Prénom de l'utilisateur
+     * @var string
+     */
     private $firstname;
 
+    /** Nom de famille de l'utilisateur
+     * @var string
+     */
     private $lastname;
 
+    /** Email de l'utilisateur
+     * @var string
+     */
     private $email;
-
     private $password;
-
     private $isadmin;
 
     /**
