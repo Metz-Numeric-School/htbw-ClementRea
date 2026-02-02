@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0] - 2026-02-02
+
+### 🚀 Features
+
+- Hash password before user creation by an admin
+
+### Improve
+
+- Refactor: deployement mehtod
+
 ## [1.0.1] - 2026-02-02
 
 ### 🐛 Bug Fixes
