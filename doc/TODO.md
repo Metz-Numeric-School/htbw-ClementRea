@@ -12,6 +12,7 @@ Suite à un audit effectué en amont, voici les failles et les bugs qui ont ét�
   Résolu : On doit utiliser htmlspecialchars() dans les variables affiché dans les templates pour les échapées
 - On nous a signalé des injections SQL lors de la création d'une nouvelles habitudes
   - exemple dans le champs "name" : foo', 'INJECTED-DESC', NOW()); --
+    Résuolu : il faut faire des requetes protégées
 
 ## BUGS
 
