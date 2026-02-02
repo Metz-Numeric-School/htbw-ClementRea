@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.1] - 2026-02-02
+
+### 🐛 Bug Fixes
+
+- Syntaxe html xss faille
+
+### 📚 Documentation
+
+- Write how to correct injection SQL
+
+## [1.0.0] - 2026-02-02
+
+### 🐛 Bug Fixes
+
+- Correct route after added an habit
+
+### Version
+
+- 0.2.1
+
 ## [0.2.1] - 2026-02-02
 
 ### 🐛 Bug Fixes
