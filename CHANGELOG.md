@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0] - 2026-02-02
+
+### 🚀 Features
+
+- Swagger documentation OAT info
+
+### 🐛 Bug Fixes
+
+- Route api/habits
+
+### 📚 Documentation
+
+- Write how to resolve routes controller unknow
+- Write db sql name and password
+- Fault speling
+- Spelin syntax TODO.md
+
 ## [1.1.0] - 2026-02-02
 
 ### 🚀 Features
