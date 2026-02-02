@@ -15,14 +15,17 @@ class HabitRepository extends AbstractRepository
 
     public function find(int $id)
     {
-        $habit = $this->getConnection()->query("SELECT * FROM habits WHERE id = $id");
-        return EntityMapper::map(Habit::class, $habit->fetch());
+        $sql = "SELECT * FROM habits WHERE id = :id";
+        $query = $this->getConnection()->prepare($sql);
+        $query->execute(['id' => $id]);
+        return EntityMapper::map(Habit::class, $query->fetch());
     }
 
     public function findByUser(int $userId)
     {
-        $sql = "SELECT * FROM habits WHERE user_id = $userId";
-        $query = $this->getConnection()->query($sql);
+        $sql = "SELECT * FROM habits WHERE user_id = :user_id";
+        $query = $this->getConnection()->prepare($sql);
+        $query->execute(['user_id' => $userId]);
         return EntityMapper::mapCollection(Habit::class, $query->fetchAll());
     }
 
@@ -39,16 +42,15 @@ class HabitRepository extends AbstractRepository
 
     public function insert(array $data = array())
     {
-        $name = $data['name'];   
-        $description = $data['description'];
 
         // Requête construite par concaténation (vulnérable)
-        $sql = "INSERT INTO habits (user_id, name, description, created_at) VALUES (" 
-            . $data['user_id'] . ", '" 
-            . $name . "', '" 
-            . $description . "', NOW())";
-
-        $query = $this->getConnection()->query($sql);
+        $sql = "INSERT INTO habits (user_id, name, description, created_at) VALUES (:user_id, :name, :description, NOW())";
+        $query = $this->getConnection()->prepare($sql);
+        $query->execute([
+            'user_id' => $data['user_id'],
+            'name' => $data['name'],
+            'description' => $data['description']
+        ]);
 
         return $this->getConnection()->lastInsertId();
     }
