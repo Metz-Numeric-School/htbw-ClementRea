@@ -6,7 +6,7 @@ use App\Repository\HabitRepository;
 use Mns\Buggy\Core\AbstractController;
 use OpenApi\Attributes as OAT;
 
-class HabitController extends AbstractController
+class HabitsController extends AbstractController
 {
     private HabitRepository $habitRepository;
 
