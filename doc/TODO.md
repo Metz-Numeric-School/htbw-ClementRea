@@ -18,5 +18,6 @@ Suite à un audit effectué en amont, voici les failles et les bugs qui ont ét�
 - Une 404 est détéctée lors de la redirection après l'ajout d'une habitude
 - Le formulaire d'inscription ne semble pas fonctionner
 - Fatal error: Uncaught Error: Class "App\Controller\Api\HabitsController" lorsque l'on accède à l'URL `/api/habits`
+  Résolu : On met simplement la bonne route dans HabitController, `/habits`
 
 **ATTENTION : certains bugs n'ont pas été listé**
