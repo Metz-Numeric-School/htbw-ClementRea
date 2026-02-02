@@ -63,7 +63,7 @@
                                             <div class="progress-bar" role="progressbar"
                                                 style="width: <?= htmlspecialchars($habit->getProgress(7)) ?>%;"
                                                 aria-valuenow="<?= htmlspecialchars($habit->getProgress(7)) ?>" aria-valuemin="0" aria-valuemax="100">
-                                                <?= htmlspecialcharsr($habit->getProgress(7)) ?>%
+                                                <?= htmlspecialchars($habit->getProgress(7)) ?>%
                                             </div>
                                         </div>
 
