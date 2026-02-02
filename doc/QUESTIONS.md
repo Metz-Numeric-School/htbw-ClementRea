@@ -25,7 +25,7 @@ Je choisi le type d'enregistrement, le Nom/Sous-domaine si besoin, je defini mon
 
 Configuration côté serveur (aaPanel)
 Une fois les DNS configurés, il faut également configurer le serveur pour je me connecte à aaPanel je vais dans "Website" > "le site créer sur 192.168.23.143"
-J'ajoyte le nom de domaine
+J'ajoute le nom de domaine
 Puis aaPanel crée automatiquement la configuration Nginx/Apache pour ce domaine
 
 3. Comment mettre en place un certificat SSL ?
