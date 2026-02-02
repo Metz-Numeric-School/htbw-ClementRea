@@ -16,7 +16,7 @@
 
                             <!-- Bouton pour marquer comme fait -->
                             <form action="/habit/toggle" method="post" class="mb-2">
-                                <input type="hidden" name="habit_id" value="<?= $habit->getId() ?>">
+                                <input type="hidden" name="habit_id" value="<?= htmlspecialchars($habit->getId()) ?>">
                                 <button type="submit" 
                                         class="btn <?= $habit->isCompletedToday() ? 'btn-success' : 'btn-outline-success' ?> btn-sm">
                                     <?= $habit->isCompletedToday() ? 'Fait ✅' : 'Marquer comme fait' ?>
@@ -27,10 +27,10 @@
                             <p class="mb-1 text-muted">Progression 7 derniers jours :</p>
                             <div class="progress mb-2">
                                 <div class="progress-bar" role="progressbar" 
-                                     style="width: <?= $habit->getProgress(7) ?>%;" 
-                                     aria-valuenow="<?= $habit->getProgress(7) ?>" 
+                                     style="width: <?= htmlspecialchars($habit->getProgress(7)) ?>%;" 
+                                     aria-valuenow="<?= htmlspecialchars($habit->getProgress(7)) ?>" 
                                      aria-valuemin="0" aria-valuemax="100">
-                                    <?= $habit->getProgress(7) ?>%
+                                    <?= htmlspecialchars($habit->getProgress(7)) ?>%
                                 </div>
                             </div>
 

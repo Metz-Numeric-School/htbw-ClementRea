@@ -9,7 +9,7 @@
             <div class="card text-center shadow-sm">
                 <div class="card-body">
                     <h5 class="card-title">Total utilisateurs</h5>
-                    <p class="card-text display-6"><?= $totalUsers ?></p>
+                    <p class="card-text display-6"><?= htmlspecialchars($totalUsers) ?></p>
                     <a href="/admin/user" class="btn btn-outline-primary btn-sm">Gérer les utilisateurs</a>
                 </div>
             </div>
@@ -19,7 +19,7 @@
             <div class="card text-center shadow-sm">
                 <div class="card-body">
                     <h5 class="card-title">Total habitudes créées</h5>
-                    <p class="card-text display-6"><?= $totalHabits ?></p>
+                    <p class="card-text display-6"><?= htmlspecialchars($totalHabits) ?></p>
                     <a href="/admin/habits" class="btn btn-outline-primary btn-sm">Gérer les habitudes</a>
                 </div>
             </div>
@@ -29,7 +29,7 @@
             <div class="card text-center shadow-sm">
                 <div class="card-body">
                     <h5 class="card-title">Habitudes complétées aujourd'hui</h5>
-                    <p class="card-text display-6"><?= $completedToday ?></p>
+                    <p class="card-text display-6"><?= htmlspecialchars($completedToday) ?></p>
                 </div>
             </div>
         </div>
