@@ -1,0 +1,18 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API Habits Tracker",
+        "description": "API pour gérer les habitudes quotidiennes",
+        "contact": {
+            "name": "Clément REA",
+            "email": "clementrea7@gmail.com"
+        },
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http://localhost",
+            "description": "Serveur de développement"
+        }
+    ]
+}

@@ -17,8 +17,10 @@ Suite à un audit effectué en amont, voici les failles et les bugs qui ont ét�
 ## BUGS
 
 - Une 404 est détéctée lors de la redirection après l'ajout d'une habitude
+  Résolu : La redirection après la création redirigeait vers /habit, ce qui ne correspondait pas à la route déclaré dans routes.json
 - Le formulaire d'inscription ne semble pas fonctionner
+  Résolu : La fonction index du RegisterController.php était une méthode $GET, alors qu'il s'agit d'un $POST
 - Fatal error: Uncaught Error: Class "App\Controller\Api\HabitsController" lorsque l'on accède à l'URL `/api/habits`
-  Résolu : On met simplement la bonne route dans HabitController, `/habits`
+  Résolu :
 
 **ATTENTION : certains bugs n'ont pas été listé**

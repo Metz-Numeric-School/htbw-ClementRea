@@ -4,6 +4,7 @@ namespace App\Controller\Api;
 
 use App\Repository\HabitRepository;
 use Mns\Buggy\Core\AbstractController;
+use OpenApi\Attributes as OAT;
 
 class HabitController extends AbstractController
 {
@@ -14,6 +15,8 @@ class HabitController extends AbstractController
         $this->habitRepository = new HabitRepository();
     }
 
+    #[OAT\Get(path: '/api/habit.json')]
+    #[OAT\Response(response: '200', description: 'get all habit')]
     public function index()
     {
         return $this->json([
