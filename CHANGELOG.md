@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.1] - 2026-02-02
+
+### 🐛 Bug Fixes
+
+- Var display user dahsboard
+- Correct injection sql
+
+### 📚 Documentation
+
+- Deploy and prepapre vps method
+- Better answer questions
+
+### Version
+
+- 0.2.0
+
 ## [0.2.0] - 2026-02-02
 
 ### 🚀 Features
